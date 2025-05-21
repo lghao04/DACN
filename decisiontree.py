@@ -9,7 +9,7 @@ feature_names = iris.feature_names
 target_names = iris.target_names
 
 # Huấn luyện cây quyết định
-dt = DecisionTreeClassifier(max_depth=5, criterion='entropy', random_state=42)
+dt = DecisionTreeClassifier(max_depth=4, random_state=42)
 dt.fit(X, y)
 
 # Hàm trích xuất nhánh
